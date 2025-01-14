@@ -13,7 +13,8 @@ class UserController extends BaseController
         return view('user_list', $data);
     }
 
-    public function saveUser($id = null)
+    public function saveUser($id = null) 
+    //Guarda usuarios; crea y edita
     {
         $userModel = new UserModel();
         helper(['form', 'url']);
